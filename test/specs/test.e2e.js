@@ -1,19 +1,4 @@
 const { expect } = require('@wdio/globals')
-// const LoginPage = require('../pageobjects/login.page')
-// const SecurePage = require('../pageobjects/secure.page')
-// const SystemPage = require("../pageobjects/system.page");
-// const HomePage = require("../pageobjects/home.page");
-
-// describe('My Login application', () => {
-//     it('should login with valid credentials', async () => {
-//         await LoginPage.open()
-
-//         await LoginPage.login('tomsmith', 'SuperSecretPassword!')
-//         await expect(SecurePage.flashAlert).toBeExisting()
-//         await expect(SecurePage.flashAlert).toHaveText(
-//             expect.stringContaining('You logged into a secure area!'))
-//     })
-// })
 
 const SystemPage = require("../pageobjects/system.page");
 const HomePage = require("../pageobjects/home.page");

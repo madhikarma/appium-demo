@@ -1,20 +1,29 @@
 # appium-demo
 Demo project for using Appium for Automated testing on Mobile (and Web)
 
+## Environment
+
+- macOS Tahoe 26.3
+- nodeJS v24
+- Xcode 26
+
 ## Installation
 
+Run the following from the root
+
     npm init -y
-    npm install --save-dev appium
-    npm install — save-dev @wdio/appium-service
+
+Optional - Download and install Appium Inspector
+
+https://github.com/appium/appium-inspector/releases
 
 ## Configuration
 
-Update wdio.conf.js with capabilities specifiying path to file:
+Update `wdio.conf.js` with capabilities specifiying path to precompiled demo app:
 
         capabilities: [{
         // capabilities for local Appium web tests on iOS
         platformName: 'iOS',
-        browserName: 'Safari',
         'appium:deviceName': 'iPhone 16',
         'appium:platformVersion': '18.2',
         'appium:automationName': 'XCUITest',
@@ -23,15 +32,31 @@ Update wdio.conf.js with capabilities specifiying path to file:
         "appium:fullReset": false
     }],
 
+
+Optional - Open Appium Inspector app and ensure settings from `xcrun simctl list devices` are configured for the booted simulator (see tutorial in links)
+
 ## Usage
 
 1. Start Appium server
-    npx appium run
+
+    `npx appium run`
 
 2. Start iOS Simulator
 
+3. (optional) Start Appium Inspector and Start Session (ensure all settings are configured )
+
+4. Run tests
+
+    `npx run wdio`
+
+## Demo
+
+![appium](demo/appium.gif)
+
 ## Commands
 
+    npx appium
+    npm run wdio
     npx appium driver list
     npx appium driver install xcuitest
     xcrun simctl list devices
