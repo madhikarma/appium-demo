@@ -49,6 +49,11 @@ Optional - Open Appium Inspector app and ensure settings from `xcrun simctl list
 
     `npx run wdio`
 
+## Tests
+
+- Tests live in the `test/specs` folder
+- Page Object pattern helpers live in the `test/pageobjects` folder
+
 ## Demo
 
 ![appium](demo/appium.gif)
