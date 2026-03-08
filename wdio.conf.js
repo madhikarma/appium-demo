@@ -54,9 +54,12 @@ exports.config = {
         // capabilities for local Appium web tests on iOS
         platformName: 'iOS',
         browserName: 'Safari',
-        'appium:deviceName': 'iPhone Simulator',
-        'appium:platformVersion': '16.4',
-        'appium:automationName': 'XCUITest'
+        'appium:deviceName': 'iPhone 16',
+        'appium:platformVersion': '18.2',
+        'appium:automationName': 'XCUITest',
+        'appium:app': '/Users/shagun/Documents/Developer/workspace/automation/appium-demo/app/wdiodemoapp.app',
+        "appium:noReset": false,
+        "appium:fullReset": false
     }],
 
     //
