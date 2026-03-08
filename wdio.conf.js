@@ -53,7 +53,6 @@ exports.config = {
     capabilities: [{
         // capabilities for local Appium web tests on iOS
         platformName: 'iOS',
-        browserName: 'Safari',
         'appium:deviceName': 'iPhone 16',
         'appium:platformVersion': '18.2',
         'appium:automationName': 'XCUITest',
